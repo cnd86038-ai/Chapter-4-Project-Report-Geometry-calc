@@ -9,3 +9,10 @@ int main() {
 
 	{
 		// Display menu
+		cout << "Geometry Calculator" << endl;
+		cout << "1. Calculate the Area of a Circle" << endl;
+		cout << "2. Calculate the Area of a Rectangle" << endl;
+		cout << "3. Calculate the Area of a Triangle" << endl;
+		cout << "4. Quit" << endl;
+		cout << "Enter your choice (1-4): ";
+		cin >> choice;
