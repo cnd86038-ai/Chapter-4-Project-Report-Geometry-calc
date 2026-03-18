@@ -63,6 +63,8 @@ int main() {
 			cout << "Exiting the program. Goodbye!" << endl;
 		} else {
 			cout << "Invalid choice. Please enter a number between 1 and 4." << endl;
-
-			return 0;
 		}
+	}
+
+	return 0;
+}
