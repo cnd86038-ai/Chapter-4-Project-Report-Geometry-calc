@@ -6,6 +6,7 @@ using namespace std;
 int main() {
 	int choice;
 	double radius, length, width, base, height, area;
+	const double pi = 3.14159;
 
 	{
 		// Display menu
@@ -26,7 +27,7 @@ int main() {
 				cout << "Error: Radius cannot be negative." << endl;
 			}
 			else {
-				area = radius * radius;
+				area = pi * radius * radius;
 				cout << fixed << setprecision(2);
 				cout << "The area of the circle is: " << area << endl;
 			}
