@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath> // for sqrt() and M_PI
+#include <cmath> // for sqrt()
 #include <iomanip> // for formatting output
 using namespace std;
 
@@ -16,3 +16,16 @@ int main() {
 		cout << "4. Quit" << endl;
 		cout << "Enter your choice (1-4): ";
 		cin >> choice;
+
+		// Handle user choice
+		if (choice == 1) {
+			// Circle area
+			cout << "Enter the radius of the circle: ";
+			cin >> radius;
+			if (radius < 0) {
+				cout << "Error: Radius cannot be negative." << endl;
+			} else {
+				area = radius * radius;
+				cout << fixed << setprecision(2);
+				cout << "The area of the circle is: " << area << endl;
+			}
