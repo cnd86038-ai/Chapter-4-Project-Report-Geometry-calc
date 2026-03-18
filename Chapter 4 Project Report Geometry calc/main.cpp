@@ -24,8 +24,45 @@ int main() {
 			cin >> radius;
 			if (radius < 0) {
 				cout << "Error: Radius cannot be negative." << endl;
-			} else {
+			}
+			else {
 				area = radius * radius;
 				cout << fixed << setprecision(2);
 				cout << "The area of the circle is: " << area << endl;
 			}
+		} if (choice == 2) {
+			// Rectangle area
+			cout << "Enter the length of the rectangle: ";
+			cin >> length;
+			cout << "Enter the width of the rectangle: ";
+			cin >> width;
+			if (length < 0 || width < 0) {
+				cout << "Error: Length and width cannot be negative." << endl;
+			}
+			else {
+				area = length * width;
+				cout << fixed << setprecision(2);
+				cout << "The area of the rectangle is: " << area << endl;
+			}
+		} if (choice == 3) {
+			// Triangle area
+			cout << "Enter the base of the triangle: ";
+			cin >> base;
+			cout << "Enter the height of the triangle: ";
+			cin >> height;
+			if (base < 0 || height < 0) {
+				cout << "Error: Base and height cannot be negative." << endl;
+			}
+			else {
+				area = 0.5 * base * height;
+				cout << fixed << setprecision(2);
+				cout << "The area of the triangle is: " << area << endl;
+			}
+		} if (choice == 4) {
+			// Quit
+			cout << "Exiting the program. Goodbye!" << endl;
+		} else {
+			cout << "Invalid choice. Please enter a number between 1 and 4." << endl;
+
+			return 0;
+		}
